@@ -1,0 +1,621 @@
+html, body{
+    scroll-behavior: smooth;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+    font-family: 'Karla', sans-serif;
+    height: 100%;
+}
+
+h1{
+    font-size: 25px;
+    padding-top: 50px;
+	line-height: 1;
+    padding: 10px;
+	text-align: center;
+    color: #385266;
+}
+
+h1.elegantshadow {
+    /* reference: https://codepen.io/juanbrujo/pen/yGpAK */
+    color: #385266;
+    font-size: 35px;
+    letter-spacing: .15em;
+    text-shadow: 
+      1px -1px 0 rgba(56, 82, 102, 0.2), 
+      -1px 2px 1px rgba(56, 82, 102, 0.15),
+      -2px 4px 1px rgba(56, 82, 102, 0.1),
+      -3px 6px 1px rgba(56, 82, 102, 0.05);
+}
+
+h2{
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 5px;
+	text-align: center;
+    color: #385266;
+    font-weight: 400;
+    margin: 10px;
+}
+
+.section {
+    font-weight: 700;
+}
+
+.feature {
+    font-weight: 700;
+    text-align: left;
+}
+
+h3{
+    color: #717171;
+    font-size: 13px;
+    padding: 5px;
+    text-align: center;
+    font-weight: 400;
+    margin: 10px;
+}
+
+p{
+    padding: 10px;
+    margin: 10px;
+    line-height: 1.5;
+}
+
+/* navbar */
+nav{
+    padding: 20px;
+	text-align: center;
+}
+
+li{
+    padding: 0 100px 0 100px;
+}
+
+a{
+	color: #385266;
+	font-weight: 400;
+	text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 15px;
+}
+
+li a.active{
+    background-color: #385266;
+    border-radius: 5px;
+    padding: 4px;
+    color: white;
+}
+
+a:hover{
+	text-decoration: underline;
+    background-color: rgba(56, 82, 102, 0.1);
+    border-radius: 5px;
+    padding: 4px;
+    color: #717171;
+}
+
+/* skip */
+*:focus{
+	border: 2px solid blcak;
+}
+
+.skip a{
+	background: white;
+	left: 0;
+	padding: 6px;
+	-webkit-transition: top 1s ease-out;
+	transition: top 1s ease-out;
+	z-index: 1;
+	position: absolute;
+	top: -100px;
+}
+
+.skip a:focus{
+	top: 0;
+}
+
+/* footer */
+footer{
+    background-color: #385266;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* potography page */
+.photography-images{
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.photography-images > img{
+	border-radius: 5px;
+    margin: 5px;
+    max-height: 250px;
+}
+
+/* images */
+img{
+    display: block;
+    margin-left: auto;
+	margin-right: auto;
+	max-height: 800px;
+    max-width: 400px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* graphics */
+.graphics-work {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-row-gap: 10px;
+}
+
+.graphics-work > img{
+    max-width: 350px;
+}
+
+.graphics-tickets{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.graphics-tickets > img{
+    margin-bottom: 20px;
+    max-height: 400px;
+    filter: drop-shadow(2px 2px 3px rgba(56, 82, 102, 0.5));
+}
+
+/* photography styling images */
+/* reference: https://www.w3schools.com/css/tryit.asp?filename=trycss_ex_images_filters */
+.blur {
+    filter: blur(0.5px);
+}
+.brightness {
+    filter: brightness(110%);
+}
+.contrast {
+    filter: contrast(150%);
+}
+.grayscale {
+    filter: grayscale(120%);
+}
+.huerotate {
+    filter: hue-rotate(45deg);
+}
+.shadow {
+    filter: drop-shadow(2px 2px 3px #385266);
+}
+.opacity {
+    filter: opacity(85%);
+}
+.saturate {
+    filter: saturate(5);
+}
+.sepia {
+    filter: sepia(120%);
+}
+
+/* form*/
+/* reference: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_responsive_form */
+fieldset{
+	border-radius: 10px;
+}
+
+fieldset div{
+    margin: 10px;
+	padding: 1%;
+	border-radius: 5px;
+}
+ 
+.contact{
+	display: grid;
+	grid-row-gap: 5px;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+input[type=reset], input[type=submit] {
+	background-color: #385266;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.button{
+    margin-left: 35%;
+}
+
+input:focus{
+	background: #CCCCCC;
+}
+
+input[type=text], input[type=subject],  input[type=email], textarea, select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* intro */
+.intro{
+    margin-bottom: 20px;
+    border-bottom: 3px solid rgba(56, 82, 102, 0.5);
+}
+
+@-webkit-keyframes intro-enlarge{
+    from{
+      width: 250px;
+    }
+    to{
+      width: 320px;
+    }
+}
+
+@keyframes intro-enlarge{
+    from{
+      width: 250px;
+    }
+    to{
+      width: 320px;
+    }
+} 
+
+.intro-image{
+    max-width: 320px;
+    -webkit-animation-name: intro-enlarge;
+    animation-name: intro-enlarge;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+/* parallax */
+/* reference: https://www.w3schools.com/howto/howto_css_parallax.asp  */
+.parallax {
+    background-image: url("../images/change-landing.png");
+    min-height: 300px;
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+/* flipcard */
+.flip-card {
+    background-color: transparent;
+    width: 320px;
+    height: 360px;
+    perspective: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(56, 82, 102, 0.3);
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card:focus .flip-card-inner{
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+.flip-card-front-image{
+    width: 320px;
+    height: 360px;
+}
+
+.flip-card-front {
+    border-radius: 5px;
+}
+  
+.flip-card-back {
+    background-color: rgba(56, 82, 102, 0.7);
+    border-radius: 5px;
+    transform: rotateY(180deg);
+}
+
+h1.card{
+    color: white;
+    padding-top: 40%;
+    padding-bottom: 5%;
+}
+
+p.card{
+    font-size: 20px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.final-design{
+    display: none;
+}
+
+/* media query for laptops and desktops*/
+/* reference: https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488 */
+@media all and (min-width: 1025px){
+    h1{
+        font-size: 35px;
+        padding-top: 30px;
+    }
+    
+    h2{
+        font-size: 20px;
+        margin: 0 250px 0 250px;
+    }
+    
+    h3{
+        font-size: 15px;
+    }
+    
+    p{
+        font-size: 15px;
+        margin: 5px 250px 5px 250px;
+    }
+
+    nav{
+        text-align: right;
+        padding: 30px 10px 0 10px;
+    }
+    
+    li{
+        display: inline-block;
+        padding: 0;
+    }
+
+/* intro */
+    .intro-image{
+        max-width: 400px
+    }
+
+    @-webkit-keyframes intro-enlarge{
+        from{
+          width: 250px;
+        }
+        to{
+          width: 400px;
+        }
+    }
+    
+    @keyframes intro-enlarge{
+        from{
+          width: 250px;
+        }
+        to{
+          width: 400px;
+        }
+      } 
+
+/* form */
+    fieldset div{
+        margin: 5px 250px 5px 250px;
+    }
+
+    .button{
+        margin-left: 43%;
+    }
+
+/* parallax */
+    .parallax {
+        height: 800px; 
+    }
+
+/* photography */
+    .photography-images{
+        margin: 5px 200px 5px 200px;
+    }
+
+/* graphics*/
+
+    .graphics-tickets{
+        margin: 5px 250px 5px 250px;
+    }
+
+    .graphics-work > img{
+        padding-left: 2px;
+        max-width: 400px;
+    }
+
+    .graphics-work {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
+        grid-template-rows: auto auto auto auto 5px;
+    }
+
+   .section{
+        grid-row: 1 / span 1;
+        grid-column: 1 / -1;
+    }
+
+    #image1, #image2 {
+        grid-row: 2 / span 1;
+    }
+
+    #image3, #image4 {
+        grid-row: 3 / span 1;
+    }
+
+    #image5, #image6 {
+        grid-row: 4 / span 1;
+    }
+
+    #image1, #image3, #image5{
+        grid-column: 2 / span 1;
+    }
+
+    #image2, #image4, #image6{
+        grid-column: 3 / span 1;
+    }
+
+/* ux design */
+    .landing > img{
+        display: block;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 800px;
+        min-height: 492px;
+    }
+
+    .flip-card{
+        display: none;
+    }
+
+    .final-design{
+        display: inline;
+    }
+
+    .final-design-image{
+        min-width: 1000px;
+        min-height: 1120px;
+    }
+}
+
+/* media query for tablets and ipads - portrait*/
+/* reference: https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488 */
+@media (min-width: 768px) and (max-width: 1024px) {
+    h2{
+        margin: 0 150px 0 150px;
+    }
+    
+    p{
+        margin: 5px 150px 5px 150px;
+    }
+
+    nav{
+        text-align: left;
+        padding: 30px 10px 20px 10px;
+      }
+    
+    li{
+        display: inline-block;
+        padding: 0;
+    }
+
+    fieldset div{
+    margin: 5px 150px 5px 150px;
+    }
+
+    .button{
+        margin-left: 40%;
+    }
+
+    .parallax {
+        height: 400px; 
+    }
+
+/* intro */
+    .intro-image{
+        max-width: 400px;
+    }
+
+    @-webkit-keyframes intro-enlarge{
+        from{
+          width: 250px;
+        }
+        to{
+          width: 400px;
+        }
+    }
+    
+    @keyframes intro-enlarge{
+        from{
+          width: 250px;
+        }
+        to{
+          width: 400px;
+        }
+    } 
+
+/* photography edit this part*/
+    .photography-images{
+        margin: 5px 100px 5px 100px;
+    }
+
+/* graphics */
+    .graphics-work > img{
+        max-width: 400px;
+    }
+    
+    .graphics-tickets{
+        margin: 5px 150px 5px 150px;
+    }
+
+/* flipcard */
+    .flip-card {
+        width: 400px;
+        height: 450px;
+    }
+    
+    .flip-card-front-image{
+        width: 400px;
+        height: 450px;
+    }
+    h1.card{
+        padding-bottom: 10%;
+    }
+    p.card{
+        padding: 0 10px;
+    }
+
+/* ux design */
+    .graphics-tickets{
+        margin: 5px 150px 5px 150px;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto; 
+    }
+    .skip a{
+      -webkit-transition: none;
+      transition: none;
+    }
+    .intro-image{
+        animation: none;
+    }
+  }
